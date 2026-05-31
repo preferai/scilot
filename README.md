@@ -1,15 +1,15 @@
 # Scilot
 
-An exploration-exploitation layer for autonomous ML research loops.
+An exploration-exploitation framework for autonomous ML research loops.
 
 
 ## What is Scilot?
 
-Scilot is a model-agnostic policy layer that sits on top of existing autoresearch loops (e.g., Karpathy's [autoresearch](https://github.com/karpathy/autoresearch)) and adds structured exploration. The architecture has four zones:
+Scilot is a model-agnostic policy layer that uses agentic research (e.g., inspired by Karpathy's [autoresearch](https://github.com/karpathy/autoresearch) for LLMs) and adds structured exploration generalizes the problem to autonomous AI research for diverse ML models. The architecture has four zones:
 
 - **Zone 1 — Autoresearch Inner Loop (existing):** the standard ratchet loop — propose hypothesis → implement change → evaluate metric → accept/revert — via a git-based ratchet.
-- **Zone 2 — Open Agent Harness:** model-agnostic harness supporting both local open-source models (Llama 3.3 70B, Qwen2.5-72B via Ollama) and commercial APIs (OpenAI GPT, Anthropic Claude).
-- **Zone 3 — Scilot Policy Layer:** a Hypothesis Classifier and Surrogate Model feed an Exploration Policy that sends AI model family recommendations back into the loop. All experiments are recorded in a Structured Experiment Ledger.
+- **Zone 2 — Open Agent Harness:** model-agnostic harness supporting both local open-source models (Llama, Qwen, etc.) and commercial ones.
+- **Zone 3 — Policy Layer:** a Hypothesis Classifier and Surrogate Model feed an Exploration Policy that sends AI model family recommendations back into the loop. All experiments are recorded in a Structured Experiment Ledger.
 - **Zone 4 — Open Artifacts:** the Autoresearch Ledger Schema and Hypothesis Taxonomy are published as open interoperability artifacts.
 
 ![Scilot Architecture](scilot_architecture.png)
