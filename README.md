@@ -5,7 +5,7 @@ An exploration-exploitation framework for autonomous ML research loops.
 
 ## What is Scilot?
 
-Scilot is a model-agnostic policy layer that uses agentic research (e.g., inspired by Karpathy's [autoresearch](https://github.com/karpathy/autoresearch) for LLMs) and adds structured exploration generalizes the problem to autonomous AI research for diverse ML models. The architecture has four zones:
+Scilot generalizes the problem to autonomous AI research (i.e., inspired by Karpathy's [autoresearch](https://github.com/karpathy/autoresearch) for LLMs) for diverse ML models. It adds structured exploration and is model-agnostic when conducting agentic research. The architecture has four zones:
 
 - **Zone 1 — Autoresearch Inner Loop (existing):** the standard ratchet loop — propose hypothesis → implement change → evaluate metric → accept/revert — via a git-based ratchet.
 - **Zone 2 — Open Agent Harness:** model-agnostic harness supporting both local open-source models (Llama, Qwen, etc.) and commercial ones.
